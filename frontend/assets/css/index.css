@@ -1,0 +1,51 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.subtitle {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+table {
+  width: 100%;
+  max-width: 40rem;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+}
+
+.thLine {
+  background-color: #000;
+}
+.thCols:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.thCols:last-child {
+  border-radius: 0 8px 8px 0;
+}
+table th,
+table td {
+  text-align: center;
+  padding: 10px 8px;
+}
+
+.lines {
+  background-color: #252525;
+}
+.lines:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.lines:last-child {
+  border-radius: 0 8px 8px 0;
+}
