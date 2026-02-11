@@ -1,0 +1,16 @@
+footer {
+  height: 2rem;
+  background: linear-gradient(
+    to right,
+    var(--yellowColor),
+    var(--darkYellowColor)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerP {
+  color: var(--darkGrayColor);
+  font-size: 1rem;
+  font-weight: bold;
+}

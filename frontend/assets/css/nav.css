@@ -1,14 +1,14 @@
 .navContainer {
   width: 100%;
   height: 4rem;
-  background-color: #f3bc08;
+  background-color: var(--yellowColor);
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
 
 .aLink {
-  color: black;
+  color: var(--grayColor);
   font-weight: bold;
   font-size: 2rem;
 }

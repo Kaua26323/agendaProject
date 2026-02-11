@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("includes/head", {title: "Register Page"}) %>
+  </head>
+
+  <body>
+    <%- include("includes/nav") %>
+    <main class="mainContainer">
+      <h1 class="title">Register</h1>
+      <h2 class="subTitle"></h2>
+  
+      <form action="/create-user" method="post">
+        <h1>Create account!</h1>
+        <div class="inputsContainers">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="inputsContainers">
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <button type="submit">Create account</button>
+      </form>
+      <h3>Already have an account?<a href="/login"> Sign in.</a></h3>
+    </main>
+
+
+    <footer><%- include("includes/footer") %></footer>
+  </body>
+</html>
