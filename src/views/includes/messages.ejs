@@ -1,0 +1,15 @@
+<% if (errors.length > 0){ %>
+  <div class="errorBox">
+    <% errors.forEach(error => { %>
+      <%= error %> <br>
+    <% }); %>
+  </div>
+<% }%>
+
+<% if (success.length > 0){ %>
+  <div class="successBox">
+    <% success.forEach( success => { %>
+      <%= success %> <br>
+    <% }); %>
+  </div>
+<% }%>

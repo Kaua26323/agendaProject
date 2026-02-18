@@ -1,0 +1,24 @@
+.errorBox {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--redColor);
+  border: 2px solid var(--darkRedColor);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkRedColor);
+  font-weight: bold;
+}
+.successBox {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--greenColor);
+  border: 2px solid var(--darkGreenColor);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkGreenColor);
+  font-weight: bold;
+}

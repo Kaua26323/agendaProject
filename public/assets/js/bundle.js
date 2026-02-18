@@ -28,33 +28,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/erroMessage.css"
-/*!***********************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/erroMessage.css ***!
-  \***********************************************************************************/
-(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ },
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css"
 /*!******************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css ***!
@@ -91,7 +64,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `footer {
   font-size: 1rem;
   font-weight: bold;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/footer.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ;;;;GAIC;EACD,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,2BAA2B;EAC3B,eAAe;EACf,iBAAiB;AACnB","sourcesContent":["footer {\r\n  height: 2rem;\r\n  background: linear-gradient(\r\n    to right,\r\n    var(--yellowColor),\r\n    var(--darkYellowColor)\r\n  );\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n.footerP {\r\n  color: var(--darkGrayColor);\r\n  font-size: 1rem;\r\n  font-weight: bold;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/footer.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ;;;;GAIC;EACD,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,2BAA2B;EAC3B,eAAe;EACf,iBAAiB;AACnB","sourcesContent":["footer {\n  height: 2rem;\n  background: linear-gradient(\n    to right,\n    var(--yellowColor),\n    var(--darkYellowColor)\n  );\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.footerP {\n  color: var(--darkGrayColor);\n  font-size: 1rem;\n  font-weight: bold;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -169,17 +142,17 @@ table td {
 .lines:last-child {
   border-radius: 0 8px 8px 0;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/index.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,yBAAyB;EACzB,qBAAqB;EACrB,SAAS;EACT,UAAU;EACV,mBAAmB;AACrB;;AAEA;EACE,sBAAsB;AACxB;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B;AACA;;EAEE,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;AAC3B;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B","sourcesContent":[".mainContainer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin-top: 4rem;\r\n}\r\n\r\n.title {\r\n  font-size: 3.5rem;\r\n}\r\n\r\n.subtitle {\r\n  font-weight: bold;\r\n  margin-top: 5px;\r\n}\r\n\r\ntable {\r\n  width: 100%;\r\n  max-width: 40rem;\r\n  border-collapse: separate;\r\n  border-spacing: 0 5px;\r\n  margin: 0;\r\n  padding: 0;\r\n  table-layout: fixed;\r\n}\r\n\r\n.thLine {\r\n  background-color: #000;\r\n}\r\n.thCols:first-child {\r\n  border-radius: 8px 0 0 8px;\r\n}\r\n.thCols:last-child {\r\n  border-radius: 0 8px 8px 0;\r\n}\r\ntable th,\r\ntable td {\r\n  text-align: center;\r\n  padding: 10px 8px;\r\n}\r\n\r\n.lines {\r\n  background-color: #252525;\r\n}\r\n.lines:first-child {\r\n  border-radius: 8px 0 0 8px;\r\n}\r\n.lines:last-child {\r\n  border-radius: 0 8px 8px 0;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/index.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,yBAAyB;EACzB,qBAAqB;EACrB,SAAS;EACT,UAAU;EACV,mBAAmB;AACrB;;AAEA;EACE,sBAAsB;AACxB;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B;AACA;;EAEE,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;AAC3B;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B","sourcesContent":[".mainContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin-top: 4rem;\n}\n\n.title {\n  font-size: 3.5rem;\n}\n\n.subtitle {\n  font-weight: bold;\n  margin-top: 5px;\n}\n\ntable {\n  width: 100%;\n  max-width: 40rem;\n  border-collapse: separate;\n  border-spacing: 0 5px;\n  margin: 0;\n  padding: 0;\n  table-layout: fixed;\n}\n\n.thLine {\n  background-color: #000;\n}\n.thCols:first-child {\n  border-radius: 8px 0 0 8px;\n}\n.thCols:last-child {\n  border-radius: 0 8px 8px 0;\n}\ntable th,\ntable td {\n  text-align: center;\n  padding: 10px 8px;\n}\n\n.lines {\n  background-color: #252525;\n}\n.lines:first-child {\n  border-radius: 8px 0 0 8px;\n}\n.lines:last-child {\n  border-radius: 0 8px 8px 0;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/login.css"
-/*!*****************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/login.css ***!
-  \*****************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/loginAndRegister.css"
+/*!****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/loginAndRegister.css ***!
+  \****************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -216,10 +189,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.mainContainer {
 
 form {
   width: 100%;
-  max-width: 25rem;
+  max-width: 29rem;
   margin-top: 1.5rem;
-  padding: 15px 10px;
-  background-color: var(--yellowColor);
+  padding: 20px 15px;
+  background: linear-gradient(
+    to right,
+    var(--yellowColor),
+    var(--darkYellowColor)
+  );
   color: var(--darkGrayColor);
   border-radius: 8px;
   display: flex;
@@ -238,7 +215,7 @@ label {
 
 input {
   width: 100%;
-  height: 2rem;
+  height: 2.8rem;
   border: 0;
   border-radius: 3px;
   padding-left: 5px;
@@ -254,12 +231,19 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
   background-color: var(--darkBlueColor);
+  margin-top: 10px;
+  border-radius: 5px;
   color: var(--whiteColor);
   font-size: 1rem;
   font-weight: bold;
-  padding: 15px 0;
+  padding: 20px 0;
+  transition: all 0.9s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: var(--grayColor);
 }
 
 h3 {
@@ -268,7 +252,58 @@ h3 {
 h3 a {
   color: var(--purpleColor);
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/login.css"],"names":[],"mappings":"AAAA;EACE,OAAO;EACP,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,2BAA2B;EAC3B,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB;EAClB,oCAAoC;EACpC,2BAA2B;EAC3B,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,kBAAkB;EAClB,sCAAsC;EACtC,wBAAwB;EACxB,eAAe;EACf,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,gBAAgB;AAClB;AACA;EACE,yBAAyB;AAC3B","sourcesContent":[".mainContainer {\r\n  flex: 1;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  margin-top: 4rem;\r\n}\r\n\r\n.title {\r\n  font-size: 3.5rem;\r\n}\r\n\r\n.subTitle {\r\n  font-weight: bold;\r\n  margin-top: 5px;\r\n}\r\n\r\nform {\r\n  width: 100%;\r\n  max-width: 25rem;\r\n  margin-top: 1.5rem;\r\n  padding: 15px 10px;\r\n  background-color: var(--yellowColor);\r\n  color: var(--darkGrayColor);\r\n  border-radius: 8px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n}\r\n\r\nform h1 {\r\n  text-align: center;\r\n}\r\n\r\nlabel {\r\n  font-size: 1.4rem;\r\n  font-weight: bold;\r\n}\r\n\r\ninput {\r\n  width: 100%;\r\n  height: 2rem;\r\n  border: 0;\r\n  border-radius: 3px;\r\n  padding-left: 5px;\r\n}\r\n\r\n.inputsContainers {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 5px;\r\n}\r\n\r\nbutton {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  border-radius: 5px;\r\n  background-color: var(--darkBlueColor);\r\n  color: var(--whiteColor);\r\n  font-size: 1rem;\r\n  font-weight: bold;\r\n  padding: 15px 0;\r\n}\r\n\r\nh3 {\r\n  margin-top: 10px;\r\n}\r\nh3 a {\r\n  color: var(--purpleColor);\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/loginAndRegister.css"],"names":[],"mappings":"AAAA;EACE,OAAO;EACP,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,2BAA2B;EAC3B,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB;EAClB;;;;GAIC;EACD,2BAA2B;EAC3B,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,SAAS;EACT,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sCAAsC;EACtC,gBAAgB;EAChB,kBAAkB;EAClB,wBAAwB;EACxB,eAAe;EACf,iBAAiB;EACjB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,gBAAgB;AAClB;AACA;EACE,yBAAyB;AAC3B","sourcesContent":[".mainContainer {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-start;\n  margin-top: 4rem;\n}\n\n.title {\n  font-size: 3.5rem;\n}\n\n.subTitle {\n  font-weight: bold;\n  margin-top: 5px;\n}\n\nform {\n  width: 100%;\n  max-width: 29rem;\n  margin-top: 1.5rem;\n  padding: 20px 15px;\n  background: linear-gradient(\n    to right,\n    var(--yellowColor),\n    var(--darkYellowColor)\n  );\n  color: var(--darkGrayColor);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n}\n\nform h1 {\n  text-align: center;\n}\n\nlabel {\n  font-size: 1.4rem;\n  font-weight: bold;\n}\n\ninput {\n  width: 100%;\n  height: 2.8rem;\n  border: 0;\n  border-radius: 3px;\n  padding-left: 5px;\n}\n\n.inputsContainers {\n  display: flex;\n  flex-direction: column;\n  gap: 5px;\n}\n\nbutton {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: var(--darkBlueColor);\n  margin-top: 10px;\n  border-radius: 5px;\n  color: var(--whiteColor);\n  font-size: 1rem;\n  font-weight: bold;\n  padding: 20px 0;\n  transition: all 0.9s ease;\n}\n\nbutton:hover {\n  transform: scale(1.05);\n  background-color: var(--grayColor);\n}\n\nh3 {\n  margin-top: 10px;\n}\nh3 a {\n  color: var(--purpleColor);\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/messages.css"
+/*!********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/messages.css ***!
+  \********************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.errorBox {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--redColor);
+  border: 2px solid var(--darkRedColor);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkRedColor);
+  font-weight: bold;
+}
+.successBox {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--greenColor);
+  border: 2px solid var(--darkGreenColor);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkGreenColor);
+  font-weight: bold;
+}
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/messages.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;EACjC,qCAAqC;EACrC,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,0BAA0B;EAC1B,iBAAiB;AACnB;AACA;EACE,WAAW;EACX,eAAe;EACf,mCAAmC;EACnC,uCAAuC;EACvC,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,4BAA4B;EAC5B,iBAAiB;AACnB","sourcesContent":[".errorBox {\n  width: 100%;\n  padding: 20px 0;\n  background-color: var(--redColor);\n  border: 2px solid var(--darkRedColor);\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--darkRedColor);\n  font-weight: bold;\n}\n.successBox {\n  width: 100%;\n  padding: 20px 0;\n  background-color: var(--greenColor);\n  border: 2px solid var(--darkGreenColor);\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--darkGreenColor);\n  font-weight: bold;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -309,7 +344,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navContainer {
   font-weight: bold;
   font-size: 2rem;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/nav.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,aAAa;EACb,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,eAAe;AACjB","sourcesContent":[".navContainer {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: var(--yellowColor);\r\n  display: flex;\r\n  align-items: center;\r\n  padding: 0 20px;\r\n}\r\n\r\n.aLink {\r\n  color: var(--grayColor);\r\n  font-weight: bold;\r\n  font-size: 2rem;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/nav.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,aAAa;EACb,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,eAAe;AACjB","sourcesContent":[".navContainer {\n  width: 100%;\n  height: 4rem;\n  background-color: var(--yellowColor);\n  display: flex;\n  align-items: center;\n  padding: 0 20px;\n}\n\n.aLink {\n  color: var(--grayColor);\n  font-weight: bold;\n  font-size: 2rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -333,10 +368,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_nav_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./nav.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/nav.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/index.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_login_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./login.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/login.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_loginAndRegister_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./loginAndRegister.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/loginAndRegister.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_footer_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./footer.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_404_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./404.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/404.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_erroMessage_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./erroMessage.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/erroMessage.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_messages_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./messages.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/messages.css");
 // Imports
 
 
@@ -349,10 +384,10 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_nav_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_3__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_login_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_loginAndRegister_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_footer_css__WEBPACK_IMPORTED_MODULE_5__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_404_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_erroMessage_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_messages_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   --yellowColor: #ffed00;
@@ -362,6 +397,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   --darkGrayColor: #2c2f38;
   --whiteColor: #fff;
   --purpleColor: #6001f8;
+  --redColor: #ff0000;
+  --darkRedColor: #9e0000;
+  --greenColor: #05f54d;
+  --darkGreenColor: #057226;
 }
 
 * {
@@ -388,7 +427,7 @@ button {
   cursor: pointer;
   border: 0;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAOA;EACE,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,wBAAwB;EACxB,wBAAwB;EACxB,kBAAkB;EAClB,sBAAsB;AACxB;;AAEA;EACE,UAAU;EACV,SAAS;EACT,sBAAsB;EACtB,yCAAyC;EACzC,aAAa;AACf;;AAEA;EACE,aAAa;EACb,uEAAuE;EACvE,aAAa;EACb,sBAAsB;EACtB,WAAW;AACb;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,SAAS;AACX","sourcesContent":["@import \"./nav.css\";\r\n@import \"./index.css\";\r\n@import \"./login.css\";\r\n@import \"./footer.css\";\r\n@import \"./404.css\";\r\n@import \"./erroMessage.css\";\r\n\r\n:root {\r\n  --yellowColor: #ffed00;\r\n  --darkYellowColor: #cabd05c7;\r\n  --grayColor: #3d474e;\r\n  --darkBlueColor: #192230;\r\n  --darkGrayColor: #2c2f38;\r\n  --whiteColor: #fff;\r\n  --purpleColor: #6001f8;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  outline: none;\r\n}\r\n\r\nbody {\r\n  height: 100vh;\r\n  background: linear-gradient(var(--darkGrayColor), var(--darkBlueColor));\r\n  display: flex;\r\n  flex-direction: column;\r\n  color: #fff;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n}\r\n\r\nbutton {\r\n  cursor: pointer;\r\n  border: 0;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAOA;EACE,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,wBAAwB;EACxB,wBAAwB;EACxB,kBAAkB;EAClB,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,qBAAqB;EACrB,yBAAyB;AAC3B;;AAEA;EACE,UAAU;EACV,SAAS;EACT,sBAAsB;EACtB,yCAAyC;EACzC,aAAa;AACf;;AAEA;EACE,aAAa;EACb,uEAAuE;EACvE,aAAa;EACb,sBAAsB;EACtB,WAAW;AACb;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,SAAS;AACX","sourcesContent":["@import \"./nav.css\";\n@import \"./index.css\";\n@import \"./loginAndRegister.css\";\n@import \"./footer.css\";\n@import \"./404.css\";\n@import \"./messages.css\";\n\n:root {\n  --yellowColor: #ffed00;\n  --darkYellowColor: #cabd05c7;\n  --grayColor: #3d474e;\n  --darkBlueColor: #192230;\n  --darkGrayColor: #2c2f38;\n  --whiteColor: #fff;\n  --purpleColor: #6001f8;\n  --redColor: #ff0000;\n  --darkRedColor: #9e0000;\n  --greenColor: #05f54d;\n  --darkGreenColor: #057226;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  font-family: Arial, Helvetica, sans-serif;\n  outline: none;\n}\n\nbody {\n  height: 100vh;\n  background: linear-gradient(var(--darkGrayColor), var(--darkBlueColor));\n  display: flex;\n  flex-direction: column;\n  color: #fff;\n}\n\na {\n  text-decoration: none;\n}\n\nbutton {\n  cursor: pointer;\n  border: 0;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
