@@ -336,15 +336,31 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navContainer {
   background-color: var(--yellowColor);
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 20px;
+}
+
+.mainArea {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--grayColor);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .aLink {
   color: var(--grayColor);
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  border-bottom: 0.5px solid #000;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/nav.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,aAAa;EACb,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,eAAe;AACjB","sourcesContent":[".navContainer {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: var(--yellowColor);\r\n  display: flex;\r\n  align-items: center;\r\n  padding: 0 20px;\r\n}\r\n\r\n.aLink {\r\n  color: var(--grayColor);\r\n  font-weight: bold;\r\n  font-size: 2rem;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/nav.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,iBAAiB;EACjB,+BAA+B;AACjC","sourcesContent":[".navContainer {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: var(--yellowColor);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 0 20px;\r\n}\r\n\r\n.mainArea {\r\n  width: 100%;\r\n  max-width: 80rem;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  color: var(--grayColor);\r\n  font-weight: bold;\r\n  font-size: 2rem;\r\n}\r\n\r\n.aLink {\r\n  color: var(--grayColor);\r\n  font-weight: bold;\r\n  font-size: 1.2rem;\r\n  border-bottom: 0.5px solid #000;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

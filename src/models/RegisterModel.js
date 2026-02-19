@@ -25,14 +25,8 @@ class CreateAccount {
     const salt = bcryptjs.genSaltSync();
     this.body.password = bcryptjs.hashSync(this.body.password, salt);
 
-    try {
-      this.user = await UserModel.create(this.body);
-      this.success.push("Account created successfully!");
-      return;
-    } catch (err) {
-      console.error("!!!Error:", err);
-      return;
-    }
+    this.user = await UserModel.create(this.body);
+    this.success.push("Account created successfully!");
   }
 
   async validate() {
@@ -66,13 +60,16 @@ class CreateAccount {
       if (typeof this.body[key] !== "string") {
         this.body[key] = "";
       }
-
-      this.body = {
-        email: this.body.email,
-        password: this.body.password,
-      };
     }
+
+    this.body = {
+      email: this.body.email,
+      password: this.body.password,
+    };
   }
 }
 
-module.exports = CreateAccount;
+module.exports = {
+  CreateAccount,
+  UserModel,
+};

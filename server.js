@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const csrf = require("csurf");
 const routes = require("./routes");
 const {
-  catchMessages,
+  globalMiddleware,
   csrfMiddleware,
   checkCsrfError,
 } = require("./src/middlewares/goblalMiddlewares");
@@ -58,7 +58,7 @@ app.use(express.static(path.resolve(__dirname, "public")));
 
 app.use(csrf());
 app.use(csrfMiddleware);
-app.use(catchMessages);
+app.use(globalMiddleware);
 app.use(routes);
 app.use(checkCsrfError);
 

@@ -1,5 +1,10 @@
 <nav class="navContainer">
   <main class="mainArea">
-    <a href="#" class="aLink">Agenda</a>
+    <a href="/" class="logo">Agenda</a>
+    <% if(!user){ %>
+      <a href="/login" class="aLink">SignIN</a>
+    <%}else { %>
+      <a href="/logout" class="aLink">LogOut</a> 
+    <% } %>
   </main>
 </nav>
