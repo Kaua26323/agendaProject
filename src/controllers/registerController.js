@@ -2,7 +2,6 @@ const CreateAccount = require("../models/RegisterModel");
 
 exports.index = (req, res) => {
   res.render("register");
-  console.log("Estou caindo aqui, ");
 };
 
 exports.registerUser = async function (req, res) {

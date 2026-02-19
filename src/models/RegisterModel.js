@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
+const bcryptjs = require("bcryptjs");
+
 const UserSchema = new mongoose.Schema({
   email: { type: String, require: true },
   password: { type: String, require: true },
@@ -16,11 +18,15 @@ class CreateAccount {
   }
 
   async register() {
-    this.validate();
+    await this.validate();
+
     if (this.errors.length > 0) return;
 
+    const salt = bcryptjs.genSaltSync();
+    this.body.password = bcryptjs.hashSync(this.body.password, salt);
+
     try {
-      this.user = await UserModel.create("User", UserSchema);
+      this.user = await UserModel.create(this.body);
       this.success.push("Account created successfully!");
       return;
     } catch (err) {
@@ -29,7 +35,7 @@ class CreateAccount {
     }
   }
 
-  validate() {
+  async validate() {
     this.cleanUp();
 
     if (!this.body.email || !this.body.password) {
@@ -41,8 +47,16 @@ class CreateAccount {
       return;
     }
 
-    if (this.body.password < 6 || this.body.password > 50) {
+    if (this.body.password.length < 6 || this.body.password.length > 50) {
       this.errors.push("Password must be 6-50 characters.");
+      console.log(this.body.password < 6 || this.body.password > 50);
+      console.log(this.body.password);
+      return;
+    }
+
+    const user = await UserModel.findOne({ email: this.body.email });
+    if (user) {
+      this.errors.push("User already exists!");
       return;
     }
   }
