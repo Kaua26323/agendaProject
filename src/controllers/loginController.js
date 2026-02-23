@@ -20,7 +20,7 @@ exports.signIn = async (req, res) => {
     req.flash("success", login.success);
     req.session.user = login.user;
     req.session.save(function () {
-      return res.redirect("/login");
+      return res.redirect("/dashboard");
     });
     return;
   } catch (err) {
