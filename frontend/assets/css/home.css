@@ -1,0 +1,62 @@
+.homeMain {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--blackColor),
+    #747202,
+    #969301,
+    var(--darkYellowColor),
+    var(--yellowColor)
+  );
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.homeSection {
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 10rem;
+}
+
+.homeSection h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.homeSection h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.linksBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.homeLink {
+  background-color: var(--whiteColor);
+  color: #2503a1;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 1s ease;
+}
+
+.homeLink:hover {
+  color: #fff;
+  background-color: #2503a1;
+}
+
+.aLogin {
+  padding: 25px 20px;
+}
+.aRegister {
+  padding: 25px 10px;
+}

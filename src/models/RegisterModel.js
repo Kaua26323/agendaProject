@@ -18,18 +18,25 @@ class CreateAccount {
   }
 
   async register() {
-    await this.validate();
+    this.validate();
 
     if (this.errors.length > 0) return;
 
-    const salt = bcryptjs.genSaltSync();
+    const user = await UserModel.findOne({ email: this.body.email });
+
+    if (user) {
+      this.errors.push("User already exists!");
+      return;
+    }
+
+    const salt = await bcryptjs.genSalt();
     this.body.password = bcryptjs.hashSync(this.body.password, salt);
 
     this.user = await UserModel.create(this.body);
     this.success.push("Account created successfully!");
   }
 
-  async validate() {
+  validate() {
     this.cleanUp();
 
     if (!this.body.email || !this.body.password) {
@@ -45,12 +52,6 @@ class CreateAccount {
       this.errors.push("Password must be 6-50 characters.");
       console.log(this.body.password < 6 || this.body.password > 50);
       console.log(this.body.password);
-      return;
-    }
-
-    const user = await UserModel.findOne({ email: this.body.email });
-    if (user) {
-      this.errors.push("User already exists!");
       return;
     }
   }

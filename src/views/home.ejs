@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("includes/head", {title: "Home Page"}) %>
+  <%- include("includes/head", {title: "Agenda Project"}) %>
   <body>
-    <%- include("includes/nav") %>
-    <h1>Welcome to the Agenda App!</h1>
-    <h2>Here you can manage everything you want!</h2>
+    <main class="homeMain">
+      <section class="homeSection">
+        <h1>Your Time, Perfectly Organized</h1>
+        <h2>
+          The smart agenda app that helps you schedule smarter, collaborate 
+          better, and achieve more. All your events, meetings, and tasks in one
+          beautiful place.
+        </h2>
+        <div class="linksBox">
+          <a href="/login" class="homeLink aLogin">
+            Get started free =>
+          </a>
+
+          <a href="/register" class="homeLink aRegister">
+            Sign Up
+          </a>
+
+        </div>
+
+      </section>
+    </main>
   </body>
 </html>

@@ -3,5 +3,5 @@ exports.index = (req, res) => {
 };
 
 exports.dashboard = (req, res) => {
-  res.render("index");
+  res.render("dashboard");
 };

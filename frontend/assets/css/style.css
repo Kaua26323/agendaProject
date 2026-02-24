@@ -1,9 +1,11 @@
-@import "./nav.css";
-@import "./index.css";
+@import "./home.css";
 @import "./loginAndRegister.css";
+@import "./nav.css";
 @import "./footer.css";
-@import "./404.css";
+@import "./dashboard.css";
+@import "./contact.css";
 @import "./messages.css";
+@import "./404.css";
 
 :root {
   --yellowColor: #ffed00;
@@ -17,6 +19,7 @@
   --darkRedColor: #9e0000;
   --greenColor: #05f54d;
   --darkGreenColor: #057226;
+  --blackColor: #000;
 }
 
 * {
@@ -29,7 +32,11 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(var(--darkGrayColor), var(--darkBlueColor));
+  background: linear-gradient(
+    var(--darkGrayColor),
+    var(--darkBlueColor),
+    var(--grayColor)
+  );
   display: flex;
   flex-direction: column;
   color: #fff;

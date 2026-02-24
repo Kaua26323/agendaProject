@@ -28,10 +28,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css"
-/*!******************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css ***!
-  \******************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/contact.css"
+/*!*******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/contact.css ***!
+  \*******************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48,33 +48,17 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `footer {
-  height: 2rem;
-  background: linear-gradient(
-    to right,
-    var(--yellowColor),
-    var(--darkYellowColor)
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footerP {
-  color: var(--darkGrayColor);
-  font-size: 1rem;
-  font-weight: bold;
-}
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/footer.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ;;;;GAIC;EACD,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,2BAA2B;EAC3B,eAAe;EACf,iBAAiB;AACnB","sourcesContent":["footer {\n  height: 2rem;\n  background: linear-gradient(\n    to right,\n    var(--yellowColor),\n    var(--darkYellowColor)\n  );\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.footerP {\n  color: var(--darkGrayColor);\n  font-size: 1rem;\n  font-weight: bold;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/index.css"
-/*!*****************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/index.css ***!
-  \*****************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/dashboard.css"
+/*!*********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/dashboard.css ***!
+  \*********************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91,19 +75,20 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.mainContainer {
+___CSS_LOADER_EXPORT___.push([module.id, `.dbContainer {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin-top: 4rem;
 }
 
-.title {
+.dbTitle {
   font-size: 3.5rem;
 }
 
-.subtitle {
+.dbSubtitle {
   font-weight: bold;
   margin-top: 5px;
 }
@@ -142,7 +127,139 @@ table td {
 .lines:last-child {
   border-radius: 0 8px 8px 0;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/index.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,yBAAyB;EACzB,qBAAqB;EACrB,SAAS;EACT,UAAU;EACV,mBAAmB;AACrB;;AAEA;EACE,sBAAsB;AACxB;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B;AACA;;EAEE,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;AAC3B;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B","sourcesContent":[".mainContainer {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin-top: 4rem;\n}\n\n.title {\n  font-size: 3.5rem;\n}\n\n.subtitle {\n  font-weight: bold;\n  margin-top: 5px;\n}\n\ntable {\n  width: 100%;\n  max-width: 40rem;\n  border-collapse: separate;\n  border-spacing: 0 5px;\n  margin: 0;\n  padding: 0;\n  table-layout: fixed;\n}\n\n.thLine {\n  background-color: #000;\n}\n.thCols:first-child {\n  border-radius: 8px 0 0 8px;\n}\n.thCols:last-child {\n  border-radius: 0 8px 8px 0;\n}\ntable th,\ntable td {\n  text-align: center;\n  padding: 10px 8px;\n}\n\n.lines {\n  background-color: #252525;\n}\n.lines:first-child {\n  border-radius: 8px 0 0 8px;\n}\n.lines:last-child {\n  border-radius: 0 8px 8px 0;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/dashboard.css"],"names":[],"mappings":"AAAA;EACE,OAAO;EACP,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,sBAAsB;EACtB,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,yBAAyB;EACzB,qBAAqB;EACrB,SAAS;EACT,UAAU;EACV,mBAAmB;AACrB;;AAEA;EACE,sBAAsB;AACxB;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B;AACA;;EAEE,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;AAC3B;AACA;EACE,0BAA0B;AAC5B;AACA;EACE,0BAA0B;AAC5B","sourcesContent":[".dbContainer {\r\n  flex: 1;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: start;\r\n  margin-top: 4rem;\r\n}\r\n\r\n.dbTitle {\r\n  font-size: 3.5rem;\r\n}\r\n\r\n.dbSubtitle {\r\n  font-weight: bold;\r\n  margin-top: 5px;\r\n}\r\n\r\ntable {\r\n  width: 100%;\r\n  max-width: 40rem;\r\n  border-collapse: separate;\r\n  border-spacing: 0 5px;\r\n  margin: 0;\r\n  padding: 0;\r\n  table-layout: fixed;\r\n}\r\n\r\n.thLine {\r\n  background-color: #000;\r\n}\r\n.thCols:first-child {\r\n  border-radius: 8px 0 0 8px;\r\n}\r\n.thCols:last-child {\r\n  border-radius: 0 8px 8px 0;\r\n}\r\ntable th,\r\ntable td {\r\n  text-align: center;\r\n  padding: 10px 8px;\r\n}\r\n\r\n.lines {\r\n  background-color: #252525;\r\n}\r\n.lines:first-child {\r\n  border-radius: 8px 0 0 8px;\r\n}\r\n.lines:last-child {\r\n  border-radius: 0 8px 8px 0;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css"
+/*!******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css ***!
+  \******************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `footer {
+  height: 2rem;
+  background: linear-gradient(
+    to right,
+    var(--yellowColor),
+    var(--darkYellowColor)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerP {
+  color: var(--darkGrayColor);
+  font-size: 1rem;
+  font-weight: bold;
+}
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/footer.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ;;;;GAIC;EACD,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,2BAA2B;EAC3B,eAAe;EACf,iBAAiB;AACnB","sourcesContent":["footer {\r\n  height: 2rem;\r\n  background: linear-gradient(\r\n    to right,\r\n    var(--yellowColor),\r\n    var(--darkYellowColor)\r\n  );\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n.footerP {\r\n  color: var(--darkGrayColor);\r\n  font-size: 1rem;\r\n  font-weight: bold;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ },
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/home.css"
+/*!****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/home.css ***!
+  \****************************************************************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.homeMain {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--blackColor),
+    #747202,
+    #969301,
+    var(--darkYellowColor),
+    var(--yellowColor)
+  );
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.homeSection {
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 10rem;
+}
+
+.homeSection h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.homeSection h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.linksBox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.homeLink {
+  background-color: var(--whiteColor);
+  color: #2503a1;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 1s ease;
+}
+
+.homeLink:hover {
+  color: #fff;
+  background-color: #2503a1;
+}
+
+.aLogin {
+  padding: 25px 20px;
+}
+.aRegister {
+  padding: 25px 10px;
+}
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/home.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ;;;;;;;GAOC;EACD,aAAa;EACb,kBAAkB;EAClB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,WAAW;EACX,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;EACE,mCAAmC;EACnC,cAAc;EACd,kBAAkB;EAClB,iBAAiB;EACjB,uBAAuB;AACzB;;AAEA;EACE,WAAW;EACX,yBAAyB;AAC3B;;AAEA;EACE,kBAAkB;AACpB;AACA;EACE,kBAAkB;AACpB","sourcesContent":[".homeMain {\r\n  width: 100%;\r\n  height: 100%;\r\n  background: linear-gradient(\r\n    90deg,\r\n    var(--blackColor),\r\n    #747202,\r\n    #969301,\r\n    var(--darkYellowColor),\r\n    var(--yellowColor)\r\n  );\r\n  display: flex;\r\n  align-items: start;\r\n  justify-content: center;\r\n}\r\n\r\n.homeSection {\r\n  width: 100%;\r\n  max-width: 60rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 1.5rem;\r\n  margin-top: 10rem;\r\n}\r\n\r\n.homeSection h1 {\r\n  font-size: 3.5rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.homeSection h2 {\r\n  font-size: 1.6rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.linksBox {\r\n  display: flex;\r\n  gap: 10px;\r\n  align-items: center;\r\n}\r\n\r\n.homeLink {\r\n  background-color: var(--whiteColor);\r\n  color: #2503a1;\r\n  border-radius: 8px;\r\n  font-weight: bold;\r\n  transition: all 1s ease;\r\n}\r\n\r\n.homeLink:hover {\r\n  color: #fff;\r\n  background-color: #2503a1;\r\n}\r\n\r\n.aLogin {\r\n  padding: 25px 20px;\r\n}\r\n.aRegister {\r\n  padding: 25px 10px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -252,7 +369,7 @@ h3 {
 h3 a {
   color: var(--purpleColor);
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/loginAndRegister.css"],"names":[],"mappings":"AAAA;EACE,OAAO;EACP,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,2BAA2B;EAC3B,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB;EAClB;;;;GAIC;EACD,2BAA2B;EAC3B,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,SAAS;EACT,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sCAAsC;EACtC,gBAAgB;EAChB,kBAAkB;EAClB,wBAAwB;EACxB,eAAe;EACf,iBAAiB;EACjB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,gBAAgB;AAClB;AACA;EACE,yBAAyB;AAC3B","sourcesContent":[".mainContainer {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-start;\n  margin-top: 4rem;\n}\n\n.title {\n  font-size: 3.5rem;\n}\n\n.subTitle {\n  font-weight: bold;\n  margin-top: 5px;\n}\n\nform {\n  width: 100%;\n  max-width: 29rem;\n  margin-top: 1.5rem;\n  padding: 20px 15px;\n  background: linear-gradient(\n    to right,\n    var(--yellowColor),\n    var(--darkYellowColor)\n  );\n  color: var(--darkGrayColor);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n}\n\nform h1 {\n  text-align: center;\n}\n\nlabel {\n  font-size: 1.4rem;\n  font-weight: bold;\n}\n\ninput {\n  width: 100%;\n  height: 2.8rem;\n  border: 0;\n  border-radius: 3px;\n  padding-left: 5px;\n}\n\n.inputsContainers {\n  display: flex;\n  flex-direction: column;\n  gap: 5px;\n}\n\nbutton {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: var(--darkBlueColor);\n  margin-top: 10px;\n  border-radius: 5px;\n  color: var(--whiteColor);\n  font-size: 1rem;\n  font-weight: bold;\n  padding: 20px 0;\n  transition: all 0.9s ease;\n}\n\nbutton:hover {\n  transform: scale(1.05);\n  background-color: var(--grayColor);\n}\n\nh3 {\n  margin-top: 10px;\n}\nh3 a {\n  color: var(--purpleColor);\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/loginAndRegister.css"],"names":[],"mappings":"AAAA;EACE,OAAO;EACP,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,2BAA2B;EAC3B,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB;EAClB;;;;GAIC;EACD,2BAA2B;EAC3B,kBAAkB;EAClB,aAAa;EACb,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,SAAS;EACT,kBAAkB;EAClB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,sCAAsC;EACtC,gBAAgB;EAChB,kBAAkB;EAClB,wBAAwB;EACxB,eAAe;EACf,iBAAiB;EACjB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,sBAAsB;EACtB,kCAAkC;AACpC;;AAEA;EACE,gBAAgB;AAClB;AACA;EACE,yBAAyB;AAC3B","sourcesContent":[".mainContainer {\r\n  flex: 1;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  margin-top: 4rem;\r\n}\r\n\r\n.title {\r\n  font-size: 3.5rem;\r\n}\r\n\r\n.subTitle {\r\n  font-weight: bold;\r\n  margin-top: 5px;\r\n}\r\n\r\nform {\r\n  width: 100%;\r\n  max-width: 29rem;\r\n  margin-top: 1.5rem;\r\n  padding: 20px 15px;\r\n  background: linear-gradient(\r\n    to right,\r\n    var(--yellowColor),\r\n    var(--darkYellowColor)\r\n  );\r\n  color: var(--darkGrayColor);\r\n  border-radius: 8px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n}\r\n\r\nform h1 {\r\n  text-align: center;\r\n}\r\n\r\nlabel {\r\n  font-size: 1.4rem;\r\n  font-weight: bold;\r\n}\r\n\r\ninput {\r\n  width: 100%;\r\n  height: 2.8rem;\r\n  border: 0;\r\n  border-radius: 3px;\r\n  padding-left: 5px;\r\n}\r\n\r\n.inputsContainers {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 5px;\r\n}\r\n\r\nbutton {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background-color: var(--darkBlueColor);\r\n  margin-top: 10px;\r\n  border-radius: 5px;\r\n  color: var(--whiteColor);\r\n  font-size: 1rem;\r\n  font-weight: bold;\r\n  padding: 20px 0;\r\n  transition: all 0.9s ease;\r\n}\r\n\r\nbutton:hover {\r\n  transform: scale(1.05);\r\n  background-color: var(--grayColor);\r\n}\r\n\r\nh3 {\r\n  margin-top: 10px;\r\n}\r\nh3 a {\r\n  color: var(--purpleColor);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -303,7 +420,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.errorBox {
   color: var(--darkGreenColor);
   font-weight: bold;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/messages.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;EACjC,qCAAqC;EACrC,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,0BAA0B;EAC1B,iBAAiB;AACnB;AACA;EACE,WAAW;EACX,eAAe;EACf,mCAAmC;EACnC,uCAAuC;EACvC,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,4BAA4B;EAC5B,iBAAiB;AACnB","sourcesContent":[".errorBox {\n  width: 100%;\n  padding: 20px 0;\n  background-color: var(--redColor);\n  border: 2px solid var(--darkRedColor);\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--darkRedColor);\n  font-weight: bold;\n}\n.successBox {\n  width: 100%;\n  padding: 20px 0;\n  background-color: var(--greenColor);\n  border: 2px solid var(--darkGreenColor);\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: var(--darkGreenColor);\n  font-weight: bold;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/messages.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,eAAe;EACf,iCAAiC;EACjC,qCAAqC;EACrC,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,0BAA0B;EAC1B,iBAAiB;AACnB;AACA;EACE,WAAW;EACX,eAAe;EACf,mCAAmC;EACnC,uCAAuC;EACvC,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,4BAA4B;EAC5B,iBAAiB;AACnB","sourcesContent":[".errorBox {\r\n  width: 100%;\r\n  padding: 20px 0;\r\n  background-color: var(--redColor);\r\n  border: 2px solid var(--darkRedColor);\r\n  border-radius: 8px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: var(--darkRedColor);\r\n  font-weight: bold;\r\n}\r\n.successBox {\r\n  width: 100%;\r\n  padding: 20px 0;\r\n  background-color: var(--greenColor);\r\n  border: 2px solid var(--darkGreenColor);\r\n  border-radius: 8px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: var(--darkGreenColor);\r\n  font-weight: bold;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -354,24 +471,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navContainer {
   font-size: 2rem;
 }
 
-.linksBox {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .aLink {
   color: var(--grayColor);
   font-weight: bold;
   font-size: 1.2rem;
   border-bottom: 0.5px solid #000;
-  transition: all 0.9 ease;
 }
 
-aLink:hover {
-  word-spacing: 5px;
+.navLinks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/nav.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,iBAAiB;EACjB,+BAA+B;EAC/B,wBAAwB;AAC1B;;AAEA;EACE,iBAAiB;AACnB","sourcesContent":[".navContainer {\n  width: 100%;\n  height: 4rem;\n  background-color: var(--yellowColor);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 0 20px;\n}\n\n.mainArea {\n  width: 100%;\n  max-width: 80rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.logo {\n  color: var(--grayColor);\n  font-weight: bold;\n  font-size: 2rem;\n}\n\n.linksBox {\n  display: flex;\n  align-items: center;\n  gap: 1rem;\n}\n\n.aLink {\n  color: var(--grayColor);\n  font-weight: bold;\n  font-size: 1.2rem;\n  border-bottom: 0.5px solid #000;\n  transition: all 0.9 ease;\n}\n\naLink:hover {\n  word-spacing: 5px;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/nav.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,uBAAuB;EACvB,iBAAiB;EACjB,iBAAiB;EACjB,+BAA+B;AACjC;;AAEA;EACE,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,SAAS;AACX","sourcesContent":[".navContainer {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: var(--yellowColor);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 0 20px;\r\n}\r\n\r\n.mainArea {\r\n  width: 100%;\r\n  max-width: 80rem;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  color: var(--grayColor);\r\n  font-weight: bold;\r\n  font-size: 2rem;\r\n}\r\n\r\n.aLink {\r\n  color: var(--grayColor);\r\n  font-weight: bold;\r\n  font-size: 1.2rem;\r\n  border-bottom: 0.5px solid #000;\r\n}\r\n\r\n.navLinks {\r\n  width: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 1rem;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -393,12 +507,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_nav_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./nav.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/nav.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/index.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_loginAndRegister_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./loginAndRegister.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/loginAndRegister.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_home_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./home.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/home.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_loginAndRegister_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./loginAndRegister.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/loginAndRegister.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_nav_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./nav.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/nav.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_footer_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./footer.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/footer.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_404_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./404.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/404.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_messages_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./messages.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/messages.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_dashboard_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./dashboard.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/dashboard.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_contact_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./contact.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/contact.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_messages_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./messages.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/messages.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_404_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js!./404.css */ "./node_modules/css-loader/dist/cjs.js!./frontend/assets/css/404.css");
 // Imports
 
 
@@ -408,13 +524,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_nav_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_3__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_loginAndRegister_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_home_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_loginAndRegister_css__WEBPACK_IMPORTED_MODULE_3__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_nav_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_footer_css__WEBPACK_IMPORTED_MODULE_5__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_404_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_messages_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_dashboard_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_contact_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_messages_css__WEBPACK_IMPORTED_MODULE_8__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_404_css__WEBPACK_IMPORTED_MODULE_9__["default"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   --yellowColor: #ffed00;
@@ -428,6 +548,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
   --darkRedColor: #9e0000;
   --greenColor: #05f54d;
   --darkGreenColor: #057226;
+  --blackColor: #000;
 }
 
 * {
@@ -440,7 +561,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `:root {
 
 body {
   height: 100vh;
-  background: linear-gradient(var(--darkGrayColor), var(--darkBlueColor));
+  background: linear-gradient(
+    var(--darkGrayColor),
+    var(--darkBlueColor),
+    var(--grayColor)
+  );
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -454,7 +579,7 @@ button {
   cursor: pointer;
   border: 0;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAOA;EACE,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,wBAAwB;EACxB,wBAAwB;EACxB,kBAAkB;EAClB,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,qBAAqB;EACrB,yBAAyB;AAC3B;;AAEA;EACE,UAAU;EACV,SAAS;EACT,sBAAsB;EACtB,yCAAyC;EACzC,aAAa;AACf;;AAEA;EACE,aAAa;EACb,uEAAuE;EACvE,aAAa;EACb,sBAAsB;EACtB,WAAW;AACb;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,SAAS;AACX","sourcesContent":["@import \"./nav.css\";\n@import \"./index.css\";\n@import \"./loginAndRegister.css\";\n@import \"./footer.css\";\n@import \"./404.css\";\n@import \"./messages.css\";\n\n:root {\n  --yellowColor: #ffed00;\n  --darkYellowColor: #cabd05c7;\n  --grayColor: #3d474e;\n  --darkBlueColor: #192230;\n  --darkGrayColor: #2c2f38;\n  --whiteColor: #fff;\n  --purpleColor: #6001f8;\n  --redColor: #ff0000;\n  --darkRedColor: #9e0000;\n  --greenColor: #05f54d;\n  --darkGreenColor: #057226;\n}\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  font-family: Arial, Helvetica, sans-serif;\n  outline: none;\n}\n\nbody {\n  height: 100vh;\n  background: linear-gradient(var(--darkGrayColor), var(--darkBlueColor));\n  display: flex;\n  flex-direction: column;\n  color: #fff;\n}\n\na {\n  text-decoration: none;\n}\n\nbutton {\n  cursor: pointer;\n  border: 0;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AASA;EACE,sBAAsB;EACtB,4BAA4B;EAC5B,oBAAoB;EACpB,wBAAwB;EACxB,wBAAwB;EACxB,kBAAkB;EAClB,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,qBAAqB;EACrB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,UAAU;EACV,SAAS;EACT,sBAAsB;EACtB,yCAAyC;EACzC,aAAa;AACf;;AAEA;EACE,aAAa;EACb;;;;GAIC;EACD,aAAa;EACb,sBAAsB;EACtB,WAAW;AACb;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,eAAe;EACf,SAAS;AACX","sourcesContent":["@import \"./home.css\";\r\n@import \"./loginAndRegister.css\";\r\n@import \"./nav.css\";\r\n@import \"./footer.css\";\r\n@import \"./dashboard.css\";\r\n@import \"./contact.css\";\r\n@import \"./messages.css\";\r\n@import \"./404.css\";\r\n\r\n:root {\r\n  --yellowColor: #ffed00;\r\n  --darkYellowColor: #cabd05c7;\r\n  --grayColor: #3d474e;\r\n  --darkBlueColor: #192230;\r\n  --darkGrayColor: #2c2f38;\r\n  --whiteColor: #fff;\r\n  --purpleColor: #6001f8;\r\n  --redColor: #ff0000;\r\n  --darkRedColor: #9e0000;\r\n  --greenColor: #05f54d;\r\n  --darkGreenColor: #057226;\r\n  --blackColor: #000;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  outline: none;\r\n}\r\n\r\nbody {\r\n  height: 100vh;\r\n  background: linear-gradient(\r\n    var(--darkGrayColor),\r\n    var(--darkBlueColor),\r\n    var(--grayColor)\r\n  );\r\n  display: flex;\r\n  flex-direction: column;\r\n  color: #fff;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n}\r\n\r\nbutton {\r\n  cursor: pointer;\r\n  border: 0;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

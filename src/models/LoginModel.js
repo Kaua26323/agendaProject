@@ -11,13 +11,31 @@ class Login {
   }
 
   async signIn() {
-    await this.validate();
+    this.validate();
     if (this.errors.length > 0) return;
+
+    this.user = await UserModel.findOne({ email: this.body.email });
+
+    if (!this.user) {
+      this.errors.push("Email/Password is invalid");
+      return;
+    }
+
+    const passwordMatch = await bcryptjs.compare(
+      this.body.password,
+      this.user.password,
+    );
+
+    if (!passwordMatch) {
+      this.errors.push("Email/Password is invalid");
+      this.user = null;
+      return;
+    }
 
     this.success.push("!Welcome back!");
   }
 
-  async validate() {
+  validate() {
     this.cleanUp();
 
     if (!this.body.email || !this.body.password) {
@@ -27,19 +45,6 @@ class Login {
 
     if (!validator.isEmail(this.body.email)) {
       this.errors.push("Email is invalid!");
-      return;
-    }
-
-    this.user = await UserModel.findOne({ email: this.body.email });
-
-    if (!this.user) {
-      this.errors.push("Email/Password is invalid");
-      return;
-    }
-
-    if (!bcryptjs.compareSync(this.body.password, this.user.password)) {
-      this.errors.push("Email/Password is invalid");
-      this.user = null;
       return;
     }
   }

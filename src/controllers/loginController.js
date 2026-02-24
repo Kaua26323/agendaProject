@@ -12,19 +12,14 @@ exports.signIn = async (req, res) => {
 
     if (login.errors.length > 0) {
       req.flash("errors", login.errors);
-      req.session.save(function () {
-        return res.redirect("/login");
-      });
-      return;
+      return req.session.save(() => res.redirect("/login"));
     }
+
     req.flash("success", login.success);
     req.session.user = login.user;
-    req.session.save(function () {
-      return res.redirect("/dashboard");
-    });
-    return;
+    return req.session.save(() => res.redirect("/dashboard"));
   } catch (err) {
-    console.log(err);
+    console.error(err);
     return res.render("404");
   }
 };
