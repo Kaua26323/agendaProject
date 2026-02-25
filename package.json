@@ -5,7 +5,7 @@
   "main": "server.js",
   "module": "commonjs",
   "scripts": {
-    "start": "nodemon server.js --ignore public --ignore frontend",
+    "start": "node server.js",
     "dev": "webpack -w"
   },
   "author": "Kauan",

@@ -8,10 +8,12 @@
       <h1 class="title">Register</h1>
       <h2 class="subTitle"></h2>
   
-      <form action="/register/user" method="post">
+      <form class="formRegister"  action="/register/user" method="post">
         <h1>Create account!</h1>
 
-        <%- include("includes/messages")%>
+        <section id="formSection">
+          <%- include("includes/messages")%>
+        </section>
 
         <input type="hidden" name="_csrf" value=<%= csrfToken%>>
         <div class="inputsContainers">

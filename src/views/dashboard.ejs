@@ -7,7 +7,11 @@
     <%- include("includes/nav") %>
     <main class="dbContainer">
       <h1 class="dbTitle">Agenda</h1>
-      <p class="dbSubtitle">Todos os seus contatos em um unico lugar!</p>
+      <p class="dbSubtitle">Keep all your contacts in one place!</p>
+      
+      <section class="dbSection">
+        <%- include("includes/messages") %> 
+      </section>
 
       <table>
         <thead>
@@ -16,28 +20,26 @@
             <th scope="col" class="thCols">LastName</th>
             <th scope="col" class="thCols">Phone</th>
             <th scope="col" class="thCols">Email</th>
+            <th scope="col" class="thCols">Edit Contact</th>
+            <th scope="col" class="thCols">Delete</th>
           </tr>
         </thead>
-        <tr class="cols">
-          <td class="lines">Kauã</td>
-          <td class="lines">Souza</td>
-          <td class="lines">67 999888777</td>
-          <td class="lines">test@gmail.com</td>
-        </tr>
-
-        <tr class="cols">
-          <td class="lines">Kauã</td>
-          <td class="lines">Souza</td>
-          <td class="lines">67 999888777</td>
-          <td class="lines">test@gmail.com</td>
-        </tr>
-
-        <tr class="cols">
-          <td class="lines">Kauã</td>
-          <td class="lines">Souza</td>
-          <td class="lines">67 999888777</td>
-          <td class="lines">test@gmail.com</td>
-        </tr>
+        <tbody>
+          <%contactsList.forEach((contact) => { %>
+            <tr class="cols">
+              <td class="lines"><%= contact.name %></td>
+              <td class="lines"><%= contact.lastName %></td>
+              <td class="lines"><%= contact.phoneNumber%></td>
+              <td class="lines"><%= contact.email %></td>
+              <td class="lines">
+                <a href="/contact/<%=contact._id%>" class="editBtn">Edit</a>
+              </td>
+              <td class="lines">
+                <a href="/contact/delete/<%=contact._id%>" class="deleteBtn">Delete</a>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
       </table>
     </main>
     <footer><%- include("includes/footer") %></footer>

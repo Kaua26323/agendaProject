@@ -1,10 +1,12 @@
 .dbContainer {
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   margin-top: 4rem;
+  gap: 8px;
 }
 
 .dbTitle {
@@ -16,9 +18,16 @@
   margin-top: 5px;
 }
 
+.dbSection {
+  width: 100%;
+  max-width: 50rem;
+  display: flex;
+  justify-content: center;
+}
+
 table {
   width: 100%;
-  max-width: 40rem;
+  max-width: 50rem;
   border-collapse: separate;
   border-spacing: 0 5px;
   margin: 0;
@@ -42,11 +51,30 @@ table td {
 }
 
 .lines {
-  background-color: #252525;
+  background-color: var(--grayColor);
 }
 .lines:first-child {
   border-radius: 8px 0 0 8px;
 }
 .lines:last-child {
   border-radius: 0 8px 8px 0;
+}
+
+.editBtn {
+  font-weight: bold;
+  color: var(--blueColor);
+  transition: all 0.9s ease;
+}
+.editBtn:hover {
+  color: var(--lightBlueColor);
+}
+
+.deleteBtn {
+  font-weight: bold;
+  color: var(--darkRedColor);
+  transition: all 0.9s ease;
+}
+
+.deleteBtn:hover {
+  color: var(--redColor);
 }

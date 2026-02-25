@@ -50,8 +50,6 @@ class CreateAccount {
 
     if (this.body.password.length < 6 || this.body.password.length > 50) {
       this.errors.push("Password must be 6-50 characters.");
-      console.log(this.body.password < 6 || this.body.password > 50);
-      console.log(this.body.password);
       return;
     }
   }

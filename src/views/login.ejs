@@ -8,10 +8,12 @@
       <h1 class="title">Login</h1>
       <h2 class="subTitle">Please log in to continue!</h2>
   
-      <form action="/signin" method="post">
-        <h1>Welcome Again!</h1>
+      <form class="formLogin"  action="/signin" method="post">
+        <h1>Welcome Back!</h1>
 
-        <%- include("includes/messages")%>
+        <section id="formSection">
+          <%- include("includes/messages")%>
+        </section>
 
         <input type="hidden" name="_csrf" value=<%= csrfToken%>>
         <div class="inputsContainers">

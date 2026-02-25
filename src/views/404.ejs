@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("includes/head", {title: "404 - Not founded"}) %>
+  <%- include("includes/head", {title: "404 - Not Found"}) %>
   <body>
     <%- include("includes/nav") %>
     <div class="errorPage">
       <h1>404</h1>
-      <h2>Not found!</h2>
-      <h3>Page not founded!</h3>
+      <h2>Not Found!</h2>
+      <h3>Your visited page not found. You may go home page.</h3>
       <%- include("includes/messages") %>
-      <a href="/">Back to home</a>
+      <div class="links404">
+        <a href="/">Back to home</a>
+        <a href="/dashboard">Back to dashboard</a>
+      </div>
     </div>
   </body>
 </html>

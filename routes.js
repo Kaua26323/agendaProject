@@ -24,6 +24,16 @@ route.post("/register/user", registerController.registerUser);
 //        contact routes
 route.get("/contact", isAuthenticated, contactController.index);
 route.post("/contact/register", isAuthenticated, contactController.register);
-route.get("/contact/:id", isAuthenticated, contactController.updateContact);
+route.get("/contact/:id", isAuthenticated, contactController.catchContact);
+route.post(
+  "/contact/update/:id",
+  isAuthenticated,
+  contactController.updateContact,
+);
+route.get(
+  "/contact/delete/:id",
+  isAuthenticated,
+  contactController.deleteContact,
+);
 
 module.exports = route;

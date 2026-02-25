@@ -7,6 +7,7 @@ const csrf = require("csurf");
 const routes = require("./routes");
 const {
   globalMiddleware,
+  catchNotFoundPage,
   csrfMiddleware,
   checkCsrfError,
 } = require("./src/middlewares/goblalMiddlewares");
@@ -21,6 +22,7 @@ mongoose
   .connect(process.env.CONNECTION_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useFindAndModify: false,
   })
   .then(() => {
     console.log("db connected, ready to listen the server.");
@@ -30,7 +32,7 @@ mongoose
     console.error("Está caindo no erro do catch:", err);
   });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
@@ -57,13 +59,17 @@ app.set("view engine", "ejs");
 app.use(express.static(path.resolve(__dirname, "public")));
 
 app.use(csrf());
+
 app.use(csrfMiddleware);
 app.use(globalMiddleware);
+
 app.use(routes);
+app.use(catchNotFoundPage);
+
 app.use(checkCsrfError);
 
 app.on("dbConnected", () => {
   app.listen(port, () => {
-    console.log(`Online! servidor em: http://localhost:${port}`);
+    console.log(`Online! servidor em: ${port}`);
   });
 });

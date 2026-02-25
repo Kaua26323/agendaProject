@@ -37,6 +37,13 @@ form h1 {
   text-align: center;
 }
 
+#formSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 label {
   font-size: 1.4rem;
   font-weight: bold;

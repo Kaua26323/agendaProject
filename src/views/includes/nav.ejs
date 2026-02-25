@@ -1,13 +1,13 @@
 <nav class="navContainer">
   <main class="mainArea">
-    <a href="/" class="logo">Agenda</a>
+    <a href="/" class="logo">Agenda Project</a>
   
     <% if(!user){ %>
       <a href="/login" class="aLink">SignIN</a>
     <%}else { %>
       <div class="navLinks">
         <a href="/dashboard" class="aLink">Dashboard</a>
-        <a href="contact" class="aLink">Contact</a>
+        <a href="/contact" class="aLink">Contact</a>
       </div>
       <a href="/logout" class="aLink">LogOut</a> 
     <% } %>

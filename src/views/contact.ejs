@@ -7,29 +7,36 @@
     <main class="mainContainer">
       <h1 class="title">Contact</h1>
       <h2 class="subTitle">Register a contact!</h2>
-  
-      <form action="/contact/register" method="post">
-        <%- include("includes/messages")%>
+      
+      <%if(contact._id){%>
+        <form class="contactForm" action="/contact/update/<%= contact.id %>" method="post">
+      <%}else {%>
+        <form class="contactForm" action="/contact/register" method="post">          
+      <%}%>
+      
+        <section id="formSection">
+          <%- include("includes/messages")%>
+        </section>
 
         <input type="hidden" name="_csrf" value=<%= csrfToken%>>
         <div class="inputsContainers">
           <label for="name">Name:</label>
-          <input type="text" name="name" id="name" value=<%= contact.name ?? ""%>>
+          <input type="text" name="name" id="name" value=<%= contact.name || "" %>>
         </div>
 
         <div class="inputsContainers">
           <label for="lastName">Last Name:</label>
-          <input type="text" name="lastName" id="lastName">
+          <input type="text" name="lastName" id="lastName" value=<%= contact.lastName || ""  %>>
         </div>
 
         <div class="inputsContainers">
           <label for="email">Email:</label>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" value=<%= contact.email || ""  %>>
         </div>
 
         <div class="inputsContainers">
           <label for="phoneNumber">Phone Number:</label>
-          <input type="number" name="phoneNumber" id="phoneNumber">
+          <input type="number" name="phoneNumber" id="phoneNumber" value=<%= contact.phoneNumber || "" %>>
         </div>
         <button type="submit">Create Contact</button>
       </form>

@@ -1,7 +1,13 @@
 exports.globalMiddleware = (req, res, next) => {
-  res.locals.errors = req.flash("errors");
-  res.locals.success = req.flash("success");
+  const errors = req.flash("errors");
+  const success = req.flash("success");
+
+  res.locals.errors = errors;
+  res.locals.success = success;
   res.locals.user = req.session.user;
+
+  console.log("Errors:", res.locals.errors);
+  console.log("Success:", res.locals.success);
   next();
 };
 
@@ -18,4 +24,8 @@ exports.checkCsrfError = (err, req, res, next) => {
 exports.csrfMiddleware = (req, res, next) => {
   res.locals.csrfToken = req.csrfToken();
   next();
+};
+
+exports.catchNotFoundPage = (req, res) => {
+  res.status(404).render("404");
 };
