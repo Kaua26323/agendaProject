@@ -6,7 +6,7 @@
   "module": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "dev": "webpack -w"
+    "build": "webpack -w"
   },
   "author": "Kauan",
   "license": "MIT",
