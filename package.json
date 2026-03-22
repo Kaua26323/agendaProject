@@ -1,7 +1,7 @@
 {
   "name": "agendaproject",
   "version": "1.0.0",
-  "description": "An agenda project created to learn Express, templates, middleware, and views",
+  "description": "An agenda project created to learn Express, templates, and views",
   "main": "server.js",
   "module": "commonjs",
   "scripts": {
@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "dev": "webpack -w"
   },
-  "author": "Kauan",
+  "author": "Kauã Souza",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
